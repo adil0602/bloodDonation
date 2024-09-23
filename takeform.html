@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="logo.png">
+    <link rel="stylesheet" href="take.php">
+    <link rel="stylesheet" href="takeform.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Take blood form</title>
+</head>
+
+<body>
+    <center><i class="fa-solid fa-heart-circle-plus fa-beat-fade fa-2xl" style="color: #f54d05;">SAVE HUMANITY</i></center>
+    <div>
+        <h3>WELCOME TO BLOOD TAKING IHMS</h3>
+
+        <form action="take.php" method="post">
+
+            <fieldset>
+                <legend> ENTER YOUR DETAILS HERE</legend>
+                <label for="name">ENTER YOUR NAME </label>
+                <input type="text" placeholder="ENTER YOUR NAME" name="name" id="name">
+
+                <br>
+                <br>
+                <label for="emailid">Email id</label>
+                <input type="text" placeholder="ENTER YOUR EMAIL ID" name="emailid" id="emailid">
+
+
+                <br>
+                <br>
+                <label for="phone">PHONE NO</label>
+                <input type="tel" placeholder="ENTER YOUR PHONE NO" name="phone" id="phone">
+
+
+
+                <br>
+                <br>
+                <label for="address">ADDRESS</label>
+                <input type="text" placeholder="ENTER YOUR FULL ADDRES " name="address" id="address">
+                <br>
+                <br>
+                <label for="bloodgroup">CHOOSE YOUR RECEIVING BLOOD GROUP</label>
+                <select name="blood" id="blood">
+                    <option value="">Select</option>
+                    <option value="A+">A+</option>
+                 <option value="A-">A-</option>
+                 <option value="B+">B+</option>
+                 <option value="B-">B-</option>
+                 <option value="AB+">AB+</option>
+                 <option value="AB-">AB-</option>
+                 <option value="O+">O+</option>
+                 <option value="0-">0-</option>
+                </select>
+                <br>
+                <br>
+                <label for="couter">CHOOSE YOUR AGE</label>
+                <input type="number" min="18" max="60" name="age" id="age">
+                <br>
+                <p>
+                    BOOKING YOUR DONATE TIMING
+                    <input type="date" name="date" id="date">
+                </p>
+
+                <label for="male">MALE
+                    <input type="radio" id="male" name="gender" value="M" ></label>
+                <label for="female">FEMALE
+                    <input type="radio"  id="female" name="gender" value="F" ></label>
+                <label for="other">OTHER
+                    <input type="radio"id="other" name="gender" value="O"></label>
+                <br>
+                <br>
+                <center><button type="submit" class="btn" name="btn" id="btn">Submit</button>
+                    <button type="reset" class="btn" name="btn" id="btn">Reset</button></center>
+
+
+
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+
+</html>

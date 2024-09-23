@@ -1,0 +1,60 @@
+body {
+    margin: 0%;
+}
+
+.maintopic {
+    margin-top: -10px;
+    font-size: 70px;
+    -webkit-text-stroke: 1px yellow;
+    text-align: center;
+    background: linear-gradient(blue, rgb(216, 7, 7));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.logo1 {
+    background: linear-gradient(grey, black);
+}
+
+.logo1 img {
+    padding: 13px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    cursor: pointer;
+    height: 70px;
+    width: 170px;
+}
+
+.navbar {
+    margin-top: -30px;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(black, grey);
+    font-size: 20px;
+}
+
+.navbar ul li {
+    border: 1px solid #080808;
+    justify-content: space-around;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.navbar ul li:hover {
+    background-color: rgb(80, 80, 78);
+    border-radius: 50px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(245, 241, 241);
+}
+
+h1 {
+    margin-top: -10px;
+    color: rgb(168, 77, 77);
+}
+
+p {
+    font-size: 20px;
+}

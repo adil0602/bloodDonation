@@ -1,0 +1,114 @@
+body {
+    margin: 0%;
+}
+
+.logo1 {
+    background: linear-gradient(grey, black);
+}
+
+.logo1 img {
+    padding: 13px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    cursor: pointer;
+    height: 70px;
+    width: 170px;
+}
+
+.navbar {
+    margin-top: -30px;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(black, grey);
+    font-size: 20px;
+}
+
+.navbar ul li {
+    border: 1px solid #080808;
+    justify-content: space-around;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.navbar ul li:hover {
+    background-color: rgb(80, 80, 78);
+    border-radius: 50px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(245, 241, 241);
+}
+
+h1 {
+    padding: 0px 0px 0px 30px;
+    color: rgb(233, 9, 9);
+}
+
+.box h2 {
+    height: 30px;
+    margin-top: -1px;
+    color: white;
+    background-color: red;
+}
+
+.box {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    border: 2px solid black;
+    height: 150px;
+}
+
+.box .boxcontainer {
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit {
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: red;
+    height: 40px;
+    width: 80px;
+    opacity: 0.6;
+}
+
+.submit:hover {
+    opacity: 1;
+}
+
+h2 {
+    background-color: red;
+}
+
+.results-container {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: 1px solid #080808;
+    padding: 10px;
+    text-align: center;
+}
+@media only screen and (max-width:940px){
+    body{
+        width: 600px;
+        height: 1000px;
+    }
+    .box{
+        width: 90%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+}

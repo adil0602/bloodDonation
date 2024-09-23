@@ -1,0 +1,41 @@
+h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form {
+    background-color: rgb(148, 187, 212);
+    position: relative;
+    left: 15%;
+    width: 70%;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+input[type=text],
+input[type=tel] {
+    width: 100%;
+    padding: 8px 0px;
+    margin: 5px 0px;
+    border-radius: 50px;
+    font-size: 17px;
+}
+
+button {
+    background-color: rgb(19, 189, 47);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+}
+@media only screen and (max-width:940px){
+    body{
+        width: 70%;
+    }
+    form{
+        width: 120%;
+    }
+}

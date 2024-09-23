@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="find.css">
+    <title>Nearest Blood Bank</title>
+</head>
+
+<body>
+    <div class="logo1">
+        <a href="index.html"><img src="logo1.jpg" alt="image" srcset=""></a>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="index.html">Home</a></li>
+            <li>
+                <a href="aboutus.html">About Us</a></li>
+            <li>
+                <a href="features.html">Features</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a></li>
+            <li>
+                <a href="contacts.html">Contacts</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=imarat shariah&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <a href="https://connectionsgame.org/">Connections Game</a>
+        </div>
+        <style>
+            .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 300px;
+            }
+            
+            .gmap_canvas {
+                overflow: hidden;
+                background: none!important;
+                width: 100%;
+                height: 300px;
+            }
+            
+            .gmap_iframe {
+                height: 300px!important;
+            }
+        </style>
+    </div>
+    <h1>Nearest Blood Bank(BB)/Blood Storage Unit(BSU)</h1>
+    <form action="" id="search-form">
+        <div class="box">
+            <h2>Search Nearest Blood Bank</h2>
+            <div class="boxcontainer">
+                <div class="state">
+                    <label for="state">Select State</label>
+                    <select id="state" onchange="populatedistricts()" name="state">
+          <option value="">Select State</option>
+          <option value="Delhi">Delhi</option>
+                    <option value="Andhrapradesh">Andhra pradesh</option>
+         <option value="Arunachalpradesh">Arunachal pradesh</option>
+         <option value="Bihar">Bihar</option>
+         <option value="Chattishgarh">Chattishgarh</option>
+         <option value="Goa">Goa</option>
+         <option value="Gujrat">Gujrat</option>
+         <option value="Haryana">Haryana</option>
+         <option value="HimachalPradesh">Himachal Pradesh</option>
+         <option value="Jharkhan">Jharkhan</option>
+         <option value="Karnataka">Karnataka</option>
+         <option value="kerala">kerala</option>
+         <option value="MadhyaPradesh">Madhya Pradesh</option>
+         <option value="Maharashtra">Maharashtra</option>
+         <option value="Manipur">Manipur</option>
+         <option value="Meghalya">Meghalya</option>
+         <option value="Mizoram">Mizoram</option>
+         <option value="Nagaland">Nagaland</option>
+         <option value="Odisha">Odisha</option>
+         <option value="Punjab">Punjab</option>
+         <option value="Rajasthan">Rajasthan</option>
+         <option value="Sikim">Sikim</option>
+         <option value="Tamil nadu">Tamil nadu</option>
+         <option value="Telangnan">Telangnan</option>
+         <option value="Tripura">Tripura</option>
+         <option value="UtterPradesh">Utter Pradesh</option>
+         <option value="Uttarakhan">Uttarakhan</option>
+         <option value="WestBangal">West Bangal</option>
+        </select>
+                </div>
+                <div class="district">
+                    <label for="district">Select District</label>
+                    <select id="district" name="district">
+          <option value="">Select District</option>
+          </select>
+                </div>
+                <div class="hospital-name">
+                    <input type="text" id="city" name="hospital-name" placeholder="Blood Bank or Hospital Name">
+
+                </div>
+            </div>
+        </div>
+        <center> <button class="submit" type="submit">Search</button></center>
+    </form>
+    <div class="results-container">
+        <h2>Search Results:</h2>
+        <ul id="results-list"></ul>
+    </div>
+    <script src="find.js"></script>
+</body>
+
+</html>
